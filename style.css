@@ -1,0 +1,194 @@
+.flex-row {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  overflow: hidden;
+}
+  
+.titlu-site {
+  background: rgba(75, 178, 242, 0.8);
+  height: 100vh;
+  width: 20%;
+  margin-right: 10px;
+  position: relative;
+}
+  
+.content {
+  background-color: #f2f1f1;
+  height: 100vh;
+  width: 80%;
+  padding: 30px 50px;
+}
+.content h1 {
+    text-align: left;
+}
+  
+a {
+  display: block;
+  width: 90%;
+  text-align: center;
+  margin: 20px auto;
+  background: rgba(53, 126, 171, 0.7);
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: black;
+  padding: 5px 0;
+  border-radius: 4px;
+}
+  
+a:hover {
+  background: orange;
+}
+  
+h1 {
+  text-align: center;
+  margin-bottom: 75px;
+  font-weight: normal;
+}
+  
+.sBtn {
+  position: absolute;
+  bottom: 25px;
+  right: calc(50% - 20px);
+  margin: 0;
+  width: 20px;
+  color: white;
+  background: turquoise;
+  border-radius: 50%;
+  padding: 5px 15px;
+  cursor: pointer;
+}
+  
+.drop-down {
+  position: relative;
+}
+  
+.drop-down-container {
+  background: orange;
+  position: absolute;
+  width: 80%;
+  top: 0;
+  right: -76%;
+  display: none;
+  border-radius: 4px;
+  padding: 5px 0;
+}
+  
+.drop-down-container a {
+  background: rgba(199, 143, 0, 1) !important;
+  margin: 5px auto !important;
+}
+  
+.drop-down:hover a {
+  background: orange;
+}
+  
+.hidden {
+  display: none;
+}
+  
+/*------Styles for S button--------*/
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+  
+.content100 {
+  padding: 30px 50px;
+}
+
+.content100 h1 {
+  text-align: left;
+}
+
+.titlu-site-2 {
+    width: 100%;
+    background:rgba(75, 178, 242, 0.8);
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.titlu-site-2 a {
+    height: fit-content;
+    width: auto;
+    margin: 5px;
+    padding: 3px 30px;
+}
+
+.titlu-site-2 .drop-down-container {
+  background: orange;
+  position: absolute;
+  width: calc(100% - 10px);
+  top: 30px;
+  left: 5px;
+  border-radius: 4px;
+  padding: 5px 0;
+}
+
+.titlu-site-2 .drop-down-container a {
+    padding: 3px 0;
+    width: 90%;
+}
+
+
+.titlu-site-2 h1 {
+  margin: 0;
+  padding: 10px 20px;
+}
+
+.titlu-site-2 .sBtn {
+  position: absolute;
+  bottom: calc(50% - 20px);
+  right: 50px;
+  padding: 1px 10px;
+}
+
+/*---------------------Main view responsivity---------------------*/
+@media only screen and (max-width: 850px) {
+  .titlu-site {
+    width: 35%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .titlu-site {
+    width: 50%;
+  }
+  .content {
+    width: 50%;
+    box-sizing: border-box;
+  }
+}
+
+/*------------------------------S Toggled--------------------------*/
+@media only screen and (max-width: 1060px) {
+  .titlu-site-2 {
+    height: 58px;
+  }
+
+  .titlu-site-2 .sBtn {
+    font-size: 2rem;
+  } 
+
+  .titlu-site-2 h1 {
+    font-size: 1rem;
+  }
+
+  .titlu-site-2 a {
+    font-size: 1rem;
+    padding: 3px 10px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+
+  .titlu-site-2 .sBtn {
+    position: relative;
+    bottom: calc(50% - 29px);
+    right: -10px;
+    padding: 1px 10px;
+  }
+
+}
